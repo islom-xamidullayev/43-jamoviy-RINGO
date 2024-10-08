@@ -1,0 +1,169 @@
+.work {
+  &__title {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    padding: 70px 0;
+  }
+
+  &__control {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    padding: 80px 0 100px 0;
+  }
+
+  &__img {
+    padding-bottom: 35px;
+  }
+
+  &__card-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    display: block;
+  }
+
+ 
+
+  &__info {
+    color: #282b22;
+    font-weight: 5oo;
+  }
+}
+
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 105px 0 150px 0;
+  }
+
+  &__img {
+    gap: 27px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-img {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__sub-title {
+    color: #282b22;
+  }
+
+  &__list {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  &__call {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 30px;
+  }
+  &__btn {
+    background: #ae7b3c;
+    padding: 22px 46px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__sub-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__brand {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 38px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  &__sub-text {
+    padding-bottom: 40px;
+    color: #282b22;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    &__wrapper {
+      display: block;
+    }
+
+    &__brand {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    &__wrapper {
+      display: block;
+    }
+
+    &__brand {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    &__wrapper {
+      display: block;
+    }
+
+    &__brand {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .work {
+    &__control {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 640px) {
+  .work {
+    &__control {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .work {
+    &__control {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__title {
+      font-size: 24 px;
+    }
+  }
+}

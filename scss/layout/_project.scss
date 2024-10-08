@@ -1,0 +1,152 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.achievements__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section_h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46.8px;
+  text-align: center;
+  color: #282b22;
+}
+
+.title p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #282b22;
+}
+
+.title {
+  display: flex;
+  padding: 50px 0;
+  gap: 15px;
+}
+
+.title img {
+  margin-top: -75px;
+}
+
+.title__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46.8px;
+  text-align: center;
+  color: #282b22;
+  padding: 0px 0;
+}
+
+.achievements_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.achievements_wrapper span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #282b22;
+}
+
+.achievements_wrapper h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+  color: #282b22;
+  margin: 0;
+}
+
+.achievements_wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #282b22;
+}
+
+.achievements_wrapper:hover span,
+.achievements_wrapper:hover h4 {
+  color: #ae7b3c;
+  transition: color 1s ease;
+}
+
+hr {
+  width: 100%;
+  max-width: 1200px;
+  height: 0px;
+}
+
+.images {
+  position: relative;
+}
+
+.images img {
+  position: relative;
+  top: -600px;
+  left: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+  .images {
+    display: none;
+  }
+
+  .achievements_wrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .title__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .images {
+    display: none;
+  }
+
+  .achievements_wrapper {
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .achievements_wrapper span,
+  .achievements_wrapper h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .achievements_wrapper p {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+
+  .title__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
