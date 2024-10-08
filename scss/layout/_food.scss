@@ -4,6 +4,8 @@
   align-items: center;
 }
 
+  
+
 .food__container {
   width: 1500px;
   height: 653px;
@@ -137,6 +139,10 @@ input:focus {
     display: none;
   }
 
+  .ff {
+    display: none;
+  }
+
   .mobile__large__food {
     display: none;
   }
@@ -190,7 +196,10 @@ input:focus {
   .mobilee {
     display: none;
   }
-
+   
+  .ff img{
+    width: 100%;
+  }
   .mobile__large__food {
     display: block;
     display: grid;
@@ -199,7 +208,7 @@ input:focus {
     align-items: center;
     gap: 10px;
     padding: 0 0 0 20px;
-
+    
     p {
       color: #ffffff;
       padding: 10px 0;
